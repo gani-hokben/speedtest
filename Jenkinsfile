@@ -14,7 +14,7 @@ pipeline {
                     if (env.BRANCH_NAME == 'main') {
                         env.TARGET_DIR = "/home/cicd/speedtest"
                     } else if (env.BRANCH_NAME == 'dev') {
-                        env.TARGET_DIR = "/home/onprem/cicd-testing/fe"
+                        env.TARGET_DIR = "/home/cicd/speedtest-dev"
                     } else {
                         error "Branch ${env.BRANCH_NAME} is not allowed to deploy"
                     }
