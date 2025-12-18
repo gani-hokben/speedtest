@@ -19,5 +19,5 @@ services:
     volumes:
       - /path/to/librespeed/config:/config
     ports:
-      - 80:80
+      - 8000:80
     restart: unless-stopped
